@@ -1,0 +1,4 @@
+com\collab\user_service\UserServiceTests.class
+com\collab\user_service\controller\UserControllerTest.class
+com\collab\user_service\UserServiceApplicationTests.class
+com\collab\user_service\integration\UserServiceIntegrationTest.class

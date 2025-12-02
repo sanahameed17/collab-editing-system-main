@@ -1,0 +1,11 @@
+C:\Users\hassan_aftab\Desktop\PP\collab-editing-system\document-service\src\main\java\com\collab\document_service\config\CorsConfig.java
+C:\Users\hassan_aftab\Desktop\PP\collab-editing-system\document-service\src\main\java\com\collab\document_service\config\OpenApiConfig.java
+C:\Users\hassan_aftab\Desktop\PP\collab-editing-system\document-service\src\main\java\com\collab\document_service\config\RestTemplateConfig.java
+C:\Users\hassan_aftab\Desktop\PP\collab-editing-system\document-service\src\main\java\com\collab\document_service\config\WebSocketConfig.java
+C:\Users\hassan_aftab\Desktop\PP\collab-editing-system\document-service\src\main\java\com\collab\document_service\controller\DocumentController.java
+C:\Users\hassan_aftab\Desktop\PP\collab-editing-system\document-service\src\main\java\com\collab\document_service\controller\DocumentWebSocketController.java
+C:\Users\hassan_aftab\Desktop\PP\collab-editing-system\document-service\src\main\java\com\collab\document_service\DocumentServiceApplication.java
+C:\Users\hassan_aftab\Desktop\PP\collab-editing-system\document-service\src\main\java\com\collab\document_service\model\Document.java
+C:\Users\hassan_aftab\Desktop\PP\collab-editing-system\document-service\src\main\java\com\collab\document_service\model\DocumentMessage.java
+C:\Users\hassan_aftab\Desktop\PP\collab-editing-system\document-service\src\main\java\com\collab\document_service\repository\DocumentRepository.java
+C:\Users\hassan_aftab\Desktop\PP\collab-editing-system\document-service\src\main\java\com\collab\document_service\service\DocumentService.java

@@ -1,0 +1,5 @@
+com\collab\user_service\controller\UserController.class
+com\collab\user_service\UserServiceApplication.class
+com\collab\user_service\model\User.class
+com\collab\user_service\config\OpenApiConfig.class
+com\collab\user_service\repository\UserRepository.class
