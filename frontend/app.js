@@ -1178,3 +1178,36 @@ function debounce(func, wait) {
     };
 }
 
+// connect
+const socket = new SockJS('http://localhost:8084/ws');
+const stompClient = Stomp.over(socket);
+stompClient.debug = null; // disable verbose logs
+
+stompClient.connect({}, function(frame) {
+  console.log('Connected: ' + frame);
+  const docId = 1; // current document id
+  stompClient.subscribe('/topic/doc/' + docId, function(message) {
+    const msg = JSON.parse(message.body);
+    // msg.content contains latest content
+    // Update editor content, but guard to avoid infinite loops
+    editor.setValue(msg.content); // example
+  });
+
+  // When user types (simplified: on debounce), send full content
+  function sendEdit(content) {
+    const message = {
+      userId: CURRENT_USER_ID,
+      username: CURRENT_USER_NAME,
+      content: content,
+      op: 'full'
+    };
+    stompClient.send('/app/doc/' + docId + '/edit', {}, JSON.stringify(message));
+  }
+
+  // Example: on editor change
+  editor.on('change', function() {
+    const content = editor.getValue();
+    // debounce / throttle in real implementation
+    sendEdit(content);
+  });
+});

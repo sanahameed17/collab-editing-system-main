@@ -23,6 +23,7 @@ A modern, Google Docs-like web interface for the Collaborative Editing System.
    - User Service (port 8081)
    - Document Service (port 8082)
    - Version Service (port 8083)
+   - Collaboration Service (port 8084)
    - API Gateway (port 8080)
 
 2. A web server to serve the frontend files (or use a simple HTTP server)
@@ -103,10 +104,15 @@ The frontend connects to the backend via the API Gateway at `http://localhost:80
 - `POST /api/documents` - Create document
 - `GET /api/documents/owner/{id}` - Get user's documents
 - `PUT /api/documents/{id}` - Update document
-- `GET /api/documents/{id}/subscribe` - Subscribe to real-time updates
+- `GET /api/documents/{id}/subscribe` - Subscribe to real-time updates (SSE)
 - `GET /api/versions/document/{id}` - Get document versions
 - `POST /api/versions/revert/{docId}/{versionId}` - Revert to version
 - `GET /api/versions/document/{id}/contributions` - Get contributions
+
+### WebSocket Endpoints (Collaboration Service):
+- `ws://localhost:8084/ws` - WebSocket connection endpoint
+- Subscribe to: `/topic/doc/{documentId}` - Receive real-time updates
+- Send edits to: `/app/doc/{documentId}/edit` - Broadcast changes
 
 ## File Structure
 
