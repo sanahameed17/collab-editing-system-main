@@ -1,0 +1,5 @@
+com\collab\version_service\model\DocumentVersion.class
+com\collab\version_service\repository\VersionRepository.class
+com\collab\version_service\VersionServiceApplication.class
+com\collab\version_service\config\OpenApiConfig.class
+com\collab\version_service\controller\VersionController.class

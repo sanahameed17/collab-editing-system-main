@@ -1,0 +1,3 @@
+com\collab\version_service\controller\VersionControllerTest.class
+com\collab\version_service\VersionServiceApplicationTests.class
+com\collab\version_service\integration\VersionServiceIntegrationTest.class
