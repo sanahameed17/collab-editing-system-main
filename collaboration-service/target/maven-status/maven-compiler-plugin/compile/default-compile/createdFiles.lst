@@ -1,0 +1,7 @@
+com\collab\collaboration_service\repository\SharedDocumentRepository.class
+com\collab\collaboration_service\controller\RealtimeController.class
+com\collab\collaboration_service\CollaborationServiceApplication.class
+com\collab\collaboration_service\model\SharedDocument.class
+com\collab\collaboration_service\controller\CollaborationController.class
+com\collab\collaboration_service\dto\CollaborationMessage.class
+com\collab\collaboration_service\config\WebSocketConfig.class
